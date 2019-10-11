@@ -4,5 +4,48 @@
 </head>
 <html>
     <body>
+    <div class="todo">
+        <h1 class="titulo">Conversión RGB-HEX</h1>
+        <hr class="linea">
+    <div class="rgb-hex">
+            
+            <form >
+                <label for="r" class="r">R </label>
+                <input type="text" name="r" class="hr" id="r" />
+                <label for="g" class="r">G </label>
+                <input type="text" name="g" class="hg" id="g" />
+                <label for="b" class="r">B </label>
+                <input type="text" name="b" class="hb" id="b" />
+                <input type="button" class="convertir" id="convertir" value="Convertir">
+                <br><br>
+                <input type="text" name="hex" id="hex" class="hex" readonly/>
+            </form>
+    </div>
+        <div class="color" id="color"></div>
+        <hr class="linea">
+
+        <h1 class="titulo">Conversión HEX-RGB</h1>
+        <hr class="linea">
+    <div class="rgb-hex">
+            <form>
+        <input type="text" name="hex" id="hex2" class="hex"/>
+        <input type="button" class="convertir" id="enviar" value="Convertir">
+        <br><br>
+        <label for="hr" class="r">R </label>
+        <input type="text" name="r" class="hr" id="hr" readonly/>
+        <label for="hg" class="r">G </label>
+        <input type="text" name="g" class="hg" id="hg" readonly/>
+        <label for="hb" class="r">B </label>
+        <input type="text" name="b" class="hb" id="hb" readonly/>
+    </form>
+
+    </div>
+    </div>
+
+    <script type="text/javascript" src="js/accion_rgb.js"></script>
+    <script type="text/javascript" src="js/accion_hex.js"></script>
+    <script type="text/javascript" src="js/transRgb.js"></script>
+    <script type="text/javascript" src="js/transHex.js"></script>
+    
     </body>
 </html>
